@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">MiniProject</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_topic_list">TopicList</string>
+
+    <string-array name="elecs">
+        <item>
+            Project no . 1
+        </item>
+        <item>
+            Project no . 2
+        </item>
+        <item>
+            Project no . 3
+        </item>
+        <item>
+            Project no . 4
+        </item>
+        <item>
+            Project no . 5
+        </item>
+        <item>
+            Project no . 6
+        </item>
+
+    </string-array>
+
+    <string-array name="extc">
+        <item>
+            Project no . 1
+        </item>
+        <item>
+            Project no . 2
+        </item>
+        <item>
+            Project no . 3
+        </item>
+        <item>
+            Project no . 4
+        </item>
+        <item>
+            Project no . 5
+        </item>
+        <item>
+            Project no . 6
+        </item>
+
+    </string-array>
+
+    <string-array name="inft">
+        <item>
+            Project no . 1
+        </item>
+        <item>
+            Project no . 2
+        </item>
+        <item>
+            Project no . 3
+        </item>
+        <item>
+            Project no . 4
+        </item>
+        <item>
+            Project no . 5
+        </item>
+        <item>
+            Project no . 6
+        </item>
+
+    </string-array>
+
+    <string-array name="comps">
+        <item>
+            Project no . 1
+        </item>
+        <item>
+            Project no . 2
+        </item>
+        <item>
+            Project no . 3
+        </item>
+        <item>
+            Project no . 4
+        </item>
+        <item>
+            Project no . 5
+        </item>
+        <item>
+            Project no . 6
+        </item>
+
+    </string-array>
+    <string name="title_activity_splash">SplashActivity</string>
+
+</resources>
