@@ -1,53 +1,109 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_bg"
+    android:clickable="true"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Electronics"
-        android:id="@+id/textView"
-        android:textSize="30dp"
-        android:layout_marginTop="131dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:background="@drawable/custom_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EXTC"
-        android:id="@+id/textView2"
-        android:textSize="30dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginEnd="56dp"
-        android:layout_alignTop="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        <LinearLayout
+            android:background="@drawable/custom_bg"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
+            <Button
+                android:background="@drawable/custom_bg"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Inft"
+                android:id="@+id/inftbutton"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+
+            android:gravity="center|center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_bg_yellow"
+                android:layout_height="fill_parent"
+                android:text="Comps"
+                android:id="@+id/compbutton"
+                android:textSize="25dp"
+                android:gravity="center|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+
+            android:gravity="center|center_horizontal">
+
+            <Button
+                android:background="@drawable/custom_bg_green"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Elecs"
+                android:id="@+id/elecsbutton"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+
+            android:gravity="center|center_horizontal">
+
+            <Button
+                android:background="@drawable/custom_bg_pink"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Extc"
+                android:id="@+id/extcbutton"
+                android:textSize="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="INFT"
-        android:id="@+id/textView3"
-        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="133dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comps"
-        android:id="@+id/textView4"
-        android:textSize="30dp"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
-</RelativeLayout>
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</LinearLayout>

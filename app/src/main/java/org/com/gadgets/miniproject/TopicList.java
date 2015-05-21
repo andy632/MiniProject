@@ -46,8 +46,8 @@ public class TopicList extends ActionBarActivity {
 
                 }
             });
-
-
+//
+//
         }else if(key.equalsIgnoreCase( "two")){
 
             String list[] = getResources().getStringArray(R.array.extc);

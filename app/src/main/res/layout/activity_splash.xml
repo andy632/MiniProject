@@ -17,4 +17,13 @@
         android:layout_centerHorizontal="true"
         android:textSize="50dp"
         android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engineering Projects Catalog"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp" />
 </RelativeLayout>
